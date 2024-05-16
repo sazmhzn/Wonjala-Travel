@@ -1,0 +1,30 @@
+/* variable Class */
+.section-title {
+  margin-bottom: 6.4rem;
+  font-weight: 700;
+  margin-top: 12rem;
+}
+
+.container {
+  max-width: 1378px;
+  margin: auto;
+}
+
+section {
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.landing-image {
+  background-image: url(https://websitedemos.net/travel-and-tourism-02/wp-content/uploads/sites/840/2021/05/amenities-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+
+h1 {
+  font-size: 64px !important;
+}
