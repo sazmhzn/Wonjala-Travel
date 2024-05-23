@@ -76,84 +76,77 @@ const Home = () => {
               </div>
             </div>
             <Button type={"submit"} value={"Submit"} />
-    
           </form>
         </div>
       </section>
 
       <div className="p-4 my-20 mx-6 flex items-center justify-around gap-6">
-        <Link to='/booking' >
+        <Link to="/booking">
           <Card
-          src={
-            "https://websitedemos.net/travel-and-tourism-02/wp-content/uploads/sites/840/2021/05/about-us.jpg"
-          } />
-        
+            src={
+              "https://websitedemos.net/travel-and-tourism-02/wp-content/uploads/sites/840/2021/05/about-us.jpg"
+            }
+          />
         </Link>
         <Link to="/booking">
           <Card
-          src={
-            "https://websitedemos.net/travel-and-tourism-02/wp-content/uploads/sites/840/2021/05/about-us-2-1.jpg"
-          }
-        />
+            src={
+              "https://websitedemos.net/travel-and-tourism-02/wp-content/uploads/sites/840/2021/05/about-us-2-1.jpg"
+            }
+          />
         </Link>
         <Link to="/booking">
           <Card
-          src={
-            "https://websitedemos.net/travel-and-tourism-02/wp-content/uploads/sites/840/2021/05/about-us-2-1.jpg"
-          }
-        />
+            src={
+              "https://websitedemos.net/travel-and-tourism-02/wp-content/uploads/sites/840/2021/05/about-us-2-1.jpg"
+            }
+          />
         </Link>
-    
-        
-        
       </div>
 
       <div className="p-4 my-20 mx-6">
         <div className="w-full bg-white border border-gray-200 rounded-lg shadow ">
-  
-            <div
-              className="p-4  bg-white rounded-lg md:p-8 "
-              id="stats"
-              role="tabpanel"
-              aria-labelledby="stats-tab"
-            >
-              <dl className=" flex items-center justify-between max-w-screen-xl  gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:p-8">
-                <div className="flex flex-col items-center justify-center">
-                  <dt className="mb-2 text-3xl text-blue-800 font-extrabold">73M+</dt>
-                  <dd className="text-gray-500">
-                    Customers
-                  </dd>
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <dt className="mb-2 text-3xl text-blue-800 font-extrabold">73M+</dt>
-                  <dd className="text-gray-500">
-                    Hotels
-                  </dd>
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <dt className="mb-2 text-3xl text-blue-800 font-extrabold">100M+</dt>
-                  <dd className="text-gray-500">
-                    Transportation
-                  </dd>
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <dt className="mb-2 text-3xl text-blue-800 font-extrabold">1000s</dt>
-                  <dd className="text-gray-500">
-                    Massage
-                  </dd>
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <dt className="mb-2 text-3xl text-blue-800 font-extrabold">1B+</dt>
-                  <dd className="text-gray-500">
-                    Spa
-                  </dd>
-                </div>
-         
-              </dl>
-            </div>
+          <div
+            className="p-4  bg-white rounded-lg md:p-8 "
+            id="stats"
+            role="tabpanel"
+            aria-labelledby="stats-tab"
+          >
+            <dl className=" flex items-center justify-between max-w-screen-xl  gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:p-8">
+              <div className="flex flex-col items-center justify-center">
+                <dt className="mb-2 text-3xl text-blue-800 font-extrabold">
+                  73M+
+                </dt>
+                <dd className="text-gray-500">Customers</dd>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <dt className="mb-2 text-3xl text-blue-800 font-extrabold">
+                  73M+
+                </dt>
+                <dd className="text-gray-500">Hotels</dd>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <dt className="mb-2 text-3xl text-blue-800 font-extrabold">
+                  100M+
+                </dt>
+                <dd className="text-gray-500">Transportation</dd>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <dt className="mb-2 text-3xl text-blue-800 font-extrabold">
+                  1000s
+                </dt>
+                <dd className="text-gray-500">Massage</dd>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <dt className="mb-2 text-3xl text-blue-800 font-extrabold">
+                  1B+
+                </dt>
+                <dd className="text-gray-500">Spa</dd>
+              </div>
+            </dl>
           </div>
         </div>
-
+      </div>
     </main>
   );
 };

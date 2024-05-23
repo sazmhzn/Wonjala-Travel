@@ -1,7 +1,23 @@
-import Button from "../component/Button";
-import CustomeInput from "../component/CustomeInput";
+import { Link, useNavigate } from "react-router-dom";
+import Button from "../../component/Button";
+import CustomeInput from "../../component/CustomeInput";
+import { useState } from "react";
 
 const SignIn = () => {
+  const navigate = useNavigate();
+  const [users, setUsers] = useState([]);
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState({
+    email: "",
+    password: "",
+  });
+  const [isLoading, setIsLoading] = useState(false);
+  const [logginIn, setLogginIn] = useState({
+    email: "",
+    password: "",
+  });
+
   return (
     <section className="h-screen">
       <div className="h-full">
@@ -17,20 +33,13 @@ const SignIn = () => {
 
           {/* Right column container */}
           <div className="mb-12 ">
-            <form className="p-6 bg-yellow-300 w-100">
+            <form className="p-6  w-100">
               {/*Sign in section*/}
-              <div className="flex bg-red-300 flex-row items-center justify-center lg:justify-start">
-                <p className="mb-0 me-4 text-lg text-center">Sign in with</p>             
+              <div className="flex flex-row items-center justify-center lg:justify-start">
+                <p className="mb-0 me-4 text-lg font-bold text-center">Sign in with</p>             
               </div>
 
-              {/* Separator between social media sign in and email/password sign in */}
-              <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300 dark:before:border-neutral-500 dark:after:border-neutral-500">
-                <p className="mx-4 mb-0 text-center text-gray-400 font-semibold">
-                  Or
-                </p>
-              </div>
-
-              {/* Email input */}
+                    {/* Email input */}
               <div className="relative mb-6" data-twe-input-wrapper-init="">
                 <CustomeInput
                   type={"text"}
@@ -65,12 +74,12 @@ const SignIn = () => {
                 {/* Register link */}
                 <p className="mb-0 mt-2 mr-4 pt-1 text-sm font-semibold">
                   Dont have an account?
-                  <a
-                    href="#!"
+                  <Link
+                    to="/sign-up"
                     className="text-blue-600 ml-2 transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
                   >
                     Register
-                  </a>
+                  </Link>
                 </p>
               </div>
             </form>
@@ -78,6 +87,7 @@ const SignIn = () => {
         </div>
       </div>
     </section>
+
   );
 };
 

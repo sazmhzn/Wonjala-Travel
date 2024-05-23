@@ -2,15 +2,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './pages/Layout'
 import Home from "./pages/Home";
 import Booking from "./pages/Booking";
-import SignIn from "./pages/sign-in";
+import SignIn from "./pages/auth/sign-in";
 import HotelListing from "./pages/HotelListing";
 import { Test } from "./pages/test";
 import Contact from "./pages/Contact";
+import SignUp from "./pages/auth/sign-up";
 
 function App() {
 
   return (
-    <>
+
     <BrowserRouter>
     <Routes>
           <Route path="/" element={<Layout />}>
@@ -27,9 +28,10 @@ function App() {
             <Route path="/UserManagement/UserDetail/:id" element={ <UserDetail/> } /> */}
           </Route>
           <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/sign-up" element={<SignUp />} />
         </Routes>
     </BrowserRouter>
-    </>
+
   )
 }
 
