@@ -5,6 +5,7 @@ import Booking from "./pages/Booking";
 import SignIn from "./pages/sign-in";
 import HotelListing from "./pages/HotelListing";
 import { Test } from "./pages/test";
+import Contact from "./pages/Contact";
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
             <Route path="/" element={ <Home />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/hotel-listing" element={<HotelListing />} />
-            <Route path="/test" element={ <Test/> } />
+            <Route path="/contact" element={ <Contact /> } />
             <Route path="/activities" element={ <Test/> } />
             {/* <Route path="/UserManagement/AddUser" element={  <PrivateRoute component={AddUser}/> } />
             <Route path="/UserManagement/EditUser/:id" element={  <PrivateRoute component={AddUser}/> } />
